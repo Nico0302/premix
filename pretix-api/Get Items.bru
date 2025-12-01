@@ -1,0 +1,15 @@
+meta {
+  name: Get Items
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/api/v1/organizers/(organizer)/events/(event)/items/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
