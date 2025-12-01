@@ -17,7 +17,7 @@ export function PurchaseBar({ totalPrice, itemCount, onPurchase, disabled }: Pur
                 </div>
                 <div className="flex items-center gap-4">
                     <span className="text-sm text-muted-foreground hidden sm:inline-block">
-                        {itemCount} tickets ausgewählt
+                        {itemCount} Ticket(s) ausgewählt
                     </span>
                     <Button
                         size="lg"

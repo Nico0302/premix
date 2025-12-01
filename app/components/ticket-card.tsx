@@ -21,19 +21,15 @@ export function TicketCard({ item, quota, quantity, onQuantityChange }: TicketCa
     return (
         <Card className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4">
             {/* Image */}
-            <div className="flex-shrink-0 w-20 h-20 bg-muted rounded-md overflow-hidden">
-                {item.picture ? (
+            {item.picture && (
+                <div className="flex-shrink-0 w-20 h-20 bg-muted rounded-md overflow-hidden">
                     <img
                         src={item.picture}
                         alt={item.name.de || "Ticket"}
                         className="w-full h-full object-cover"
                     />
-                ) : (
-                    <div className="w-full h-full flex items-center justify-center text-muted-foreground text-xs">
-                        No Image
-                    </div>
-                )}
-            </div>
+                </div>
+            )}
 
             {/* Details */}
             <CardContent className="flex-grow min-w-0 p-0">
